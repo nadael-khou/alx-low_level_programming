@@ -1,16 +1,19 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * main - prints the string "Holberton" from a character array.
- * Return: 0 on success.
+ * main - Entry Block
+  *Description: prints _putchar followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-	char c[] = "Holberton";
-	int i;
+	char c[8] = "_putchar";
 
-	for (i = 0; i < 9; i++)
+	int i = 0;
+
+	while (i < 8)
 	{
 		_putchar(c[i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
